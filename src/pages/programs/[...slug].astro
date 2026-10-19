@@ -1,0 +1,6 @@
+---
+import { getCollection, render } from 'astro:content'; import BaseLayout from '../../layouts/BaseLayout.astro';
+export async function getStaticPaths() { return (await getCollection('programs')).map(entry => ({params:{slug:entry.id},props:{entry}})); } const { entry } = Astro.props; const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<BaseLayout title={entry.data.title}><article class="section"><div class="shell prose"><p><a href={`${base}programs`}>← Back to programs</a></p><p class="eyebrow">{entry.data.audience}</p><h1>{entry.data.title}</h1><p class="lede">{entry.data.summary}</p>{entry.data.schedule && <p><strong>Schedule:</strong> {entry.data.schedule}</p>}{entry.data.signupUrl && <p><a class="button" href={entry.data.signupUrl}>{entry.data.signupLabel || `Sign up for ${entry.data.title}`}</a></p>}<Content />{entry.data.contact && <p><strong>Questions?</strong> <a href={`mailto:${entry.data.contact}`}>{entry.data.contact}</a></p>}</div></article></BaseLayout>

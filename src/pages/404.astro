@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<BaseLayout title="Page not found"><section class="section"><div class="shell prose"><p class="kicker">404</p><h1>That page isn’t here.</h1><p>Try the <a href={base}>home page</a>, browse <a href={`${base}events`}>events</a>, or <a href={`${base}join`}>contact the chapter</a>.</p></div></section></BaseLayout>

@@ -1,0 +1,10 @@
+---
+import type { CollectionEntry } from 'astro:content';
+const { event } = Astro.props as { event: CollectionEntry<'events'> };
+const date = new Intl.DateTimeFormat('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }).format(event.data.date);
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<article class="card event-card">
+  <div class="event-date"><time datetime={event.data.date.toISOString()}>{date}</time><span>{event.data.startTime}{event.data.endTime ? `–${event.data.endTime}` : ''}</span></div>
+  <div><p class:list={['eyebrow', event.data.status === 'cancelled' && 'cancelled']}>{event.data.status === 'cancelled' ? 'Cancelled' : 'Event'}</p><h3><a href={`${base}events/${event.id}/`}>{event.data.title}</a></h3><p>{event.data.summary}</p><p class="event-location"><strong>Where:</strong> {event.data.location}</p>{event.data.registrationUrl && <a class="text-link" href={event.data.registrationUrl}>{event.data.registrationLabel || `Register for ${event.data.title}`} <span aria-hidden="true">→</span></a>}</div>
+</article>

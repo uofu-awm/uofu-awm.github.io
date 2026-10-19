@@ -1,0 +1,4 @@
+---
+import { getCollection } from 'astro:content'; import BaseLayout from '../../layouts/BaseLayout.astro'; const programs = (await getCollection('programs')).sort((a,b)=>a.data.order-b.data.order); const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<BaseLayout title="Programs"><section class="section"><div class="shell"><p class="kicker">Build community</p><h1>Programs</h1><p class="lede">AWM programs make space for learning, mentoring, friendship, and sharing mathematics with our community.</p><div class="grid two">{programs.map(program => <article class="card"><p class="eyebrow">{program.data.audience}</p><h2><a href={`${base}programs/${program.id}/`}>{program.data.title}</a></h2><p>{program.data.summary}</p>{program.data.schedule && <p><strong>When:</strong> {program.data.schedule}</p>}</article>)}</div></div></section></BaseLayout>

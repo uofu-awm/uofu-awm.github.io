@@ -1,0 +1,21 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const pathname = `/${Astro.url.pathname.slice(base.length)}`.replace(/\/$/, '') || '/';
+const links = [
+  ['/', 'Home'], ['/events', 'Events'], ['/programs', 'Programs'], ['/resources', 'Resources'], ['/archive', 'Archive'], ['/about', 'About'], ['/join', 'Join & contact'],
+];
+---
+<header class="site-header">
+  <div class="shell header-inner">
+    <div class="brand-cluster">
+      <a class="university-mark" href="https://www.utah.edu/"><img src={`${base}images/university-of-utah-logo.svg`} alt="University of Utah" /></a>
+      <a class="brand" href={base} aria-label="University of Utah AWM Student Chapter home"><span><span class="brand-small">Department of Mathematics</span><strong>AWM Student Chapter</strong></span></a>
+      <a class="awm-mark" href="https://awm-math.org/"><img src={`${base}images/awm-student-chapter-logo.jpg`} alt="Association for Women in Mathematics Student Chapters" /></a>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        {links.map(([href, label]) => <li><a href={`${base}${href.slice(1)}`} aria-current={pathname === href ? 'page' : undefined}>{label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+</header>

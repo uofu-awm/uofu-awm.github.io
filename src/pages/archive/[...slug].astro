@@ -1,0 +1,9 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+export async function getStaticPaths() { return (await getCollection('archive')).map(entry => ({ params: { slug: entry.id }, props: { entry } })); }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<BaseLayout title={entry.data.title}><article class="section"><div class="shell prose archive-content"><p><a href={`${base}archive`}>← Back to archive</a></p><p class="eyebrow">{entry.data.section}{entry.data.originalDate ? ` · ${entry.data.originalDate}` : ''}</p><h1>{entry.data.title}</h1><p class="meta">Imported from the <a href={entry.data.sourceUrl}>original chapter website</a>. Visible source wording is preserved; conversion damage and formatting have been repaired.</p><Content /></div></article></BaseLayout>
