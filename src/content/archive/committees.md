@@ -4,7 +4,25 @@ sourceUrl: "https://www.math.utah.edu/awmchapter/committees.php"
 section: "Chapter pages"
 ---
 
-### Academic Year 2023–24
+### Academic Year 2025–26
+
+| Role | Name |
+| --- | --- |
+| President | Montana Ferita |
+| Vice President | Katie Lynch |
+| Treasurer | Alice Ponte |
+| Secretary | Annika Gratrix |
+| Events | Nicole Lacey, Ethan Morgan |
+| Speaker Series | Sradha Ramesh Bhatt, Thomas Hill|
+| Outreach | Abby Linscott, Anne Fayolle |
+| Undergraduate Involvement | Madelyn Warr, Cali Cannon |
+| Post-Doc Involvement | Leslie Mavrakis |
+| Undergraduate Study Hour | George Shaji |
+| Faculty Advisor | Anna Little |
+
+<br>
+
+### Academic Year 2024–25
 
 | Role | Name |
 | --- | --- |
@@ -19,6 +37,26 @@ section: "Chapter pages"
 | Post-Doc Involvement | Noy Soffer Aranov |
 | Faculty Advisor | Priyam Patel |
 
+<br>
+
+### Academic Year 2023–24
+
+| Role | Name |
+| --- | --- |
+| President | Julie Sherman |
+| Vice President | Samantha Linn |
+| Treasurer | Katie Lynch |
+| Secretary | Kaitlin O'Dell, Annika Gratrix |
+| Events | Montana Ferita, Delaney Moiser |
+| Speaker Series | Keshav Patel, Tory Richardson |
+| Outreach | Matthew Bertucci |
+| Undergraduate Involvement | Alice Parker |
+| Conference | Sandra Rodriguez, Trung Chau |
+| Post-Doc Involvement | Alicia Lamarche, Emelie Arvidsson |
+| Faculty Advisor | Priyam Patel |
+
+<br>
+
 ### Academic Year 2022–23
 
 | Role | Name |
@@ -31,6 +69,8 @@ section: "Chapter pages"
 | Speaker Series | Keshav Patel |
 | Outreach | Delaney Mosier |
 | Faculty Advisor | Priyam Patel |
+
+<br>
 
 ### Academic Year 2021–22
 
@@ -48,6 +88,8 @@ section: "Chapter pages"
 | Conference | Peter McDonald |
 | Faculty Advisor | Priyam Patel |
 
+<br>
+
 ### Academic Year 2020–21
 
 | Role | Name |
@@ -63,6 +105,8 @@ section: "Chapter pages"
 | Outreach | Matthew Bertucci |
 | Conference | Janina Letz |
 | Faculty Advisor | Christel Hohenegger |
+
+<br>
 
 ### Academic Year 2019–20
 
@@ -80,6 +124,8 @@ section: "Chapter pages"
 | Conference | Janina Letz |
 | Faculty Advisor | Christel Hohenegger |
 
+<br>
+
 ### Academic Year 2018–19
 
 | Role | Name |
@@ -91,6 +137,8 @@ section: "Chapter pages"
 | Website | Anna Nelson, Rebekah Eichberg |
 | Faculty Advisor | Christel Hohenegger |
 
+<br>
+
 ### Academic Year 2017–18
 
 | Role | Name |
@@ -99,6 +147,8 @@ section: "Chapter pages"
 | Vice President | Heather Brooks |
 | Treasurer | Samantha Hill |
 | Faculty Advisor | Christel Hohenegger |
+
+<br>
 
 ### Academic Year 2016–17
 
